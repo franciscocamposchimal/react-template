@@ -1,0 +1,34 @@
+{
+  "name": "test-app",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.8.1",
+    "@emotion/styled": "^11.8.1",
+    "@mui/icons-material": "^5.4.4",
+    "@mui/material": "^5.4.4",
+    "@mui/styled-engine-sc": "^5.4.2",
+    "@mui/x-data-grid": "^5.5.1",
+    "@reduxjs/toolkit": "^1.8.0",
+    "antd": "^4.19.2",
+    "axios": "^0.26.1",
+    "notistack": "^2.0.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.6",
+    "react-router-dom": "^6.2.2",
+    "sass": "^1.49.9",
+    "styled-components": "^5.3.3"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^1.0.7",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "prettier": "2.6.0",
+    "vite": "^2.8.0"
+  }
+}
