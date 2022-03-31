@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
 const useFetchAndLoad = () => {
   const [loading, setLoading] = useState(false);
@@ -10,7 +10,10 @@ const useFetchAndLoad = () => {
     let result = {};
     try {
       result = await axiosCall.call;
-    } catch (err) {}
+    } catch (err) {
+      setLoading(false);
+      throw err;
+    }
     setLoading(false);
     return result;
   };

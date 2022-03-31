@@ -1,11 +1,6 @@
-import { useEffect } from 'react';
+import { useEffect } from "react";
 
-export const useAsync = (
-  asyncFn,
-  successFunction,
-  returnFunction,
-  dependencies= []
-) => {
+export const useAsync = (asyncFn, successFunction, returnFunction, dependencies) => {
   useEffect(() => {
     let isActive = true;
     asyncFn().then((result) => {

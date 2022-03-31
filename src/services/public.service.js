@@ -1,12 +1,20 @@
 import { loadAbort } from './../utilities/load-abort-axios.utility';
 import axios from 'axios';
 
+export const login = () => {
+  const controller = loadAbort();
+  return {
+    call: axios.get<User>('https://rickandmortyapi.com/api/character/2', { signal: controller.signal }),
+    controller
+  };
+};
+
 export const getMorty = () => {
-  return axios.get('https://rickandmortyapi.com/api/character/2');
+  return axios.get<User>('https://rickandmortyapi.com/api/character/2');
 };
 
 export const getRick = () => {
-  return axios.get('https://rickandmortyapi.com/api/character/1');
+  return axios.get<User>('https://rickandmortyapi.com/api/character/1');
 };
 
 export const getCoolMorty = () => {
